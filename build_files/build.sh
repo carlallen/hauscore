@@ -26,9 +26,9 @@ systemctl enable docker.service
 systemctl enable cachefilesd
 
 ### Disable systemd-resolved
-systemctl disable systemd-resolved.service
-sed -i '/\[main\]/a dns=default' /etc/NetworkManager/NetworkManager.conf
-rm /etc/resolv.conf
+# systemctl disable systemd-resolved.service
+# sed -i '/\[main\]/a dns=default' /etc/NetworkManager/NetworkManager.conf
+# rm /etc/resolv.conf
 
 ### Set up fastfetch on login shell
 echo "/usr/bin/fastfetch" >> /etc/profile.d/fastfetch.sh
