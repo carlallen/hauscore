@@ -23,6 +23,7 @@ dnf5 install -y tmux zsh python3-pip fastfetch cachefilesd
 
 systemctl enable docker.socket
 systemctl enable docker.service
+systemctl enable cachefilesd
 
 ### Set up fastfetch on login shell
 echo "/usr/bin/fastfetch" >> /etc/profile.d/fastfetch.sh
