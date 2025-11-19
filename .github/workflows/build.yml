@@ -99,8 +99,8 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          file: docker/blocky/Dockerfile
-          context: ./docker/blocky
+          file: ./Containerfile
+          context: .
           tags: ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
 
       # - name: Build Image
