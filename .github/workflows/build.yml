@@ -101,7 +101,7 @@ jobs:
           push: true
           file: docker/blocky/Dockerfile
           context: ./docker/blocky
-          tags: ${{ vars.IMAGE_REGISTRY }}/${{ vars.IMAGE_NAME }}:latest
+          tags: ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
 
       # - name: Build Image
       #   id: build_image
